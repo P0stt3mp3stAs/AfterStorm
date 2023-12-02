@@ -1,0 +1,97 @@
+.terminal {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #60fdff;
+  padding-top: 30px;
+  padding-left: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  margin: 0px auto;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  line-height: 2;
+  white-space: pre-wrap;
+}
+
+.xbar {
+  background-color: #323233;
+  width: 300px;
+  height: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5px;
+}
+
+.contaner {
+  position: relative;
+  align-items: center;
+  margin-right: 20%;
+}
+
+
+.red {
+  height: 10px;
+  width: 10px;
+  background-color: #fe5f57;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.yellow {
+  height: 10px;
+  width: 10px;
+  background-color: #fdbc2c;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.green {
+  height: 10px;
+  width: 10px;
+  background-color: #28c840;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: white;
+  padding-top: 30px;
+  padding-left: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+
+  margin-left: 20%;
+  white-space: pre-wrap;
+  overflow: auto;
+  
+  line-height: 1.5;
+  text-align: left;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+p{
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+}

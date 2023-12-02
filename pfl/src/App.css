@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.App {
+  position: relative; /* Ensure positioning context for z-index */
+  text-align: center;
+  /* background-image: linear-gradient(to right, #09153a, #1d063a); */
+}
+
+.poop {
+  color: aliceblue;
+}
