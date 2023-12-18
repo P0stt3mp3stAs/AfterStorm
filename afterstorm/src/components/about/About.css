@@ -1,0 +1,38 @@
+.about {
+  width: 700px;
+  height: 292px;
+  color: #28c840;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.abouttext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.aboutbg {
+  height: 400px;
+}
+
+.aboutcontainer {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.sun {
+  position: relative;
+  width: 1100px;
+  overflow: hidden;
+  z-index: -1;
+}

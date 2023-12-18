@@ -1,0 +1,16 @@
+
+
+.img-loop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.img-loop-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}

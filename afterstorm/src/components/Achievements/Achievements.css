@@ -1,0 +1,67 @@
+.achvmnt {
+  display: flex;
+  align-items:  center;
+  justify-content: space-between;
+  padding-right: 10px;
+  width: 100%;
+}
+
+    .arrowPosition{
+      margin: 10%;
+      position: relative;
+    }
+        .arrow-container {
+          width: 50px;
+          height: 100px;
+          position: relative;
+        }
+            .arrow {
+              width: 0;
+              height: 0;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+              border-bottom: 30px solid #3fb8af; /* Change color if needed */
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%) rotate(90deg);
+              animation: arrowAnimation 1s infinite;
+            }
+
+            @keyframes arrowAnimation {
+              0% {
+                transform: translateX(-50%) rotate(0deg) translateY(0);
+              }
+              50% {
+                transform: translateX(-50%) rotate(0deg) translateY(-30px);
+              }
+              100% {
+                transform: translateX(-50%) rotate(0deg) translateY(0);
+              }
+            }
+
+    .container {
+      width: 600px;
+      height: 600px;
+      left: 50%;
+      overflow-y: scroll;
+      border-radius: 10px;
+    }
+
+        .Ac {
+          width: 500px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+        }
+
+    
+
+
+
+    
+
+    
+
+    
+
