@@ -1,7 +1,7 @@
 .about {
   width: 700px;
   height: 292px;
-  color: #28c840;
+  color: #fff;
   margin: 50px auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -16,7 +16,8 @@
   font-size: 25px;
   line-height: 1.5;
   white-space: pre-wrap;
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 2px #000;
+  /* text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); */
   text-transform: uppercase;
 }
 

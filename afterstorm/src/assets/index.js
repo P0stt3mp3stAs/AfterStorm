@@ -109,6 +109,16 @@ import i78 from './0078.png';
 import i79 from './0079.png';
 import i80 from './0080.png';
 
+//Programs
+import react from './react.png'
+import js from './js.png'
+import html5 from './html5.png'
+import css from './css.png'
+import blender from './blender.png'
+import ai from './ai.png'
+import ps from './ps.png'
+import figma from './figma.png'
+
 
 export {
   logo,
@@ -217,4 +227,7 @@ export {
   i78,
   i79,
   i80,
+
+  react,
+  js, html5, css, blender, ai, ps, figma,
 };

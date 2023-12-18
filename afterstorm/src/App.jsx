@@ -5,6 +5,7 @@ import Main from './components/main/main';
 import ImgLoop from './components/ImgLoop/ImgLoop';
 import About from './components/about/About';
 import Achievements from './components/Achievements/Achievements';
+import Programs from './components/Programs/Programs';
 import Footer from './components/Footer/Footer';
 import React, { useRef } from 'react';
 
@@ -19,6 +20,7 @@ const App = () => {
       <Main/>
       <About/>
       <Achievements ref={achievementsRef} />
+      <Programs/>
       <Footer />
       
     </div>
