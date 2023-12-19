@@ -1,25 +1,23 @@
 .wrapper {
   max-height: 120px;
-  margin-top: 30px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto;
+  background-color: #5aef63;
 }
 
 .wrapper .item {
   min-width: 110px;
   height: 110px;
   line-height: 110px;
-  /* background-color: #ddd; */
+  background-color: #ddd;
   align-items: center;
 
   display: block;
-  /* background: black; */
+  background: #ffec00;
   border-radius: 50%;
   margin-left: 2%;
-  /* background: radial-gradient(circle at 100px 100px, #ffffff, #000000); */
+  /* background: radial-gradient(circle at 100px 100px, #ffec00, #5aef63); */
 }
 
 .logos {

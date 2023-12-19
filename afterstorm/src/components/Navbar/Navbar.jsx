@@ -9,9 +9,13 @@ class Navbar extends Component {
   handleClikc = () => {
     this.setState({clicked: !this.state.clicked})
   }
+
+  state = { clicked: false };
+
   handleAboutClick = () => {
-    // Scroll to 20% of the page
-    window.scrollTo({ top: window.innerHeight / 4, behavior: 'smooth' });
+    if (this.props.mainComponentRef && this.props.mainComponentRef.current) {
+      this.props.mainComponentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
     this.setState({ clicked: false });
   };
 
@@ -26,16 +30,16 @@ class Navbar extends Component {
     window.location.href = 'mailto:ghaliwali@gmail.com';
   };
 
-  handleNav1Click = () => {
+  handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   render() {
     return (
-      <nav>
+      <nav className='navContainer'>
         <div id='navbg'></div>
-        <nav id='nav1' onClick={this.handleNav1Click}>
+        <nav id='nav1' >
           <Link to='/'>
-            <img src={logo} alt='logo' className='logo'/>
+            <img src={logo} alt='logo' className='logo' onClick={this.handleLogoClick}/>
           </Link>
 
           <ul id='menu' className={this.state.clicked ? 'active' : ''}>
@@ -52,7 +56,7 @@ class Navbar extends Component {
           <div id='mobile' onClick={this.handleClikc}>
             <i id='bar' className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
-          </nav>
+        </nav>
       </nav>
     )
   }

@@ -20,8 +20,11 @@ const ImgLoop = () => {
   }, [images.length]);
 
   return (
+    <div>
     <div className='img-loop-container'>
+      <div className='title1'>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br></div>
       <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+    </div>
     </div>
   );
 };

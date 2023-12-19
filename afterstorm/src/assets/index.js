@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import aboutbg from "./aboutbg.svg";
-import video from "./logo.mp4";
-import video1 from "./logo.mov";
+import ACHIEVEMENTS from "./ACHIEVEMENTS.svg"
+
 
       //Footer
 import sunburn from "./footerbg.svg"
@@ -122,8 +122,6 @@ import figma from './figma.png'
 
 export {
   logo,
-  video,
-  video1,
   aboutbg,
   sunburn,
   light,
@@ -134,6 +132,7 @@ export {
   mail,
   x,
   co,
+  ACHIEVEMENTS,
 
       // Achievements
   A,
@@ -229,5 +228,11 @@ export {
   i80,
 
   react,
-  js, html5, css, blender, ai, ps, figma,
+  js,
+  html5, 
+  css, 
+  blender, 
+  ai, 
+  ps, 
+  figma,
 };
