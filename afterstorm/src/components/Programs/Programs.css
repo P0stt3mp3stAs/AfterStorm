@@ -1,31 +1,194 @@
-.wrapper {
-  max-height: 120px;
+#blackbg {
+  background: black;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Horizontally center content */
   align-items: center;
-  background-color: #5aef63;
 }
+    #blackholebg {
+      position: absolute;
+      width: 30%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
 
-.wrapper .item {
-  min-width: 110px;
-  height: 110px;
-  line-height: 110px;
-  background-color: #ddd;
-  align-items: center;
+    /* .wrapper {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
-  display: block;
-  background: #ffec00;
-  border-radius: 50%;
-  margin-left: 2%;
-  /* background: radial-gradient(circle at 100px 100px, #ffec00, #5aef63); */
-}
+        .item {
+          min-width: 110px;
+          height: 110px;
+          line-height: 110px;
+          align-items: center;
+          margin-left: 2%;
+        }
 
-.logos {
-  margin-top: 25px;
-  width: 60px;
-}
+            .logos {
+              margin-top: 25px;
+              width: 60px;
+            }
 
-.figma {
-  margin-top: 30px;
-  width: 60px;
-}
+            .figma {
+              margin-top: 30px;
+              width: 60px;
+            } */
+
+            .wrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 500px;
+              position: relative;
+            }
+
+            .item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            
+            .logos {
+              width: 0px;
+            }
+
+            /* React ✓ */
+            
+            .react {
+              animation: react 2s ease-in-out 0.5s infinite ;
+            }
+
+            @keyframes react {
+              0% {
+                transform: translateX(-2000px);
+                width: 500px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* js ✓ */
+            
+            .js {
+              animation: js 3.5s ease-in-out 1s infinite ;
+            }
+
+            @keyframes js {
+              0% {
+                transform: translate(2000%, -500%);
+                width: 500px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* html5 ✓ */
+
+            .html5 {
+              animation: html5 3s ease-in-out 1.5s infinite;
+            }
+
+            @keyframes html5 {
+              0% {
+                transform: translate(-700%, 700%);
+                width: 500px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* css ✓ */
+
+            .css {
+              animation: css 2.5s ease-in-out 2s infinite;
+            }
+
+            @keyframes css {
+              0% {
+                transform: translate(700%, 700%);
+                width: 500px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* blender ✓ */
+
+            .blender {
+              animation: blender 4s ease-in-out 2.5s infinite; 
+            }
+            @keyframes blender {
+              0% {
+                transform: translate(-1500%, -300%);
+                width: 500px;
+              }
+              100% {
+                transform: translate(0, 0);
+              }
+            }
+
+            /* ai ✓ */
+
+            .ai {
+              animation: ai 3s ease-in-out 3s infinite; 
+            }
+
+            @keyframes ai {
+              0% {
+                transform: translate(100%, 300%);
+                width: 300px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* ps */
+
+            .ps {
+              animation: ps 2s ease-in-out 3.5s infinite; 
+            }
+
+            @keyframes ps {
+              0% {
+                transform: translate(-100%, -300%);
+                width: 200px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            /* figma */
+
+            .figma {
+              animation: figma 3s ease-in-out 4s infinite; 
+            }
+
+            @keyframes figma {
+              0% {
+                transform: translate(2000%, 500%);
+                width: 500px;
+              }
+              100% {
+                transform: translateX(0);
+              }
+            } 

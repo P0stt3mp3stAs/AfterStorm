@@ -1,34 +1,40 @@
 import React from 'react'
 import './Programs.css'
-import { react, js, html5, css, blender, ai, ps, figma, } from '../../assets'
+import { react, js, html5, css, blender, ai, ps, figma, blackhole, } from '../../assets'
 
 function Programs() {
   return (
-    <div className='wrapper'>
+    <div id='blackbg'>
 
-      <div className='item'>
-        <img src={react} alt={react} className='logos' />
+      <div id='blackholebg'>
+        <img src={blackhole} alt={blackhole} className='blackhole' />
       </div>
-      <div className='item'>
-        <img src={js} alt={js} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={html5} alt={html5} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={css} alt={css} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={blender} alt={blender} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={ai} alt={ai} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={ps} alt={ps} className='logos' />
-      </div>
-      <div className='item'>
-        <img src={figma} alt={figma} className='figma' />
+
+      <div className='wrapper'>
+        <div className='item'>
+          <img src={react} alt={react} className='react logos' />
+        </div>
+        <div className='item'>
+          <img src={js} alt={js} className='js logos' />
+        </div>
+        <div className='item'>
+          <img src={html5} alt={html5} className='html5 logos' />
+        </div>
+        <div className='item'>
+          <img src={css} alt={css} className='css logos' />
+        </div>
+        <div className='item'>
+          <img src={blender} alt={blender} className='blender logos' />
+        </div>
+        <div className='item'>
+          <img src={ai} alt={ai} className='ai logos' />
+        </div>
+        <div className='item'>
+          <img src={ps} alt={ps} className='ps logos' />
+        </div>
+        <div className='item'>
+          <img src={figma} alt={figma} className='figma logos' />
+        </div>
       </div>
 
     </div>

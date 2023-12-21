@@ -118,10 +118,12 @@ import blender from './blender.png'
 import ai from './ai.png'
 import ps from './ps.png'
 import figma from './figma.png'
+import blackhole from './blackhole.svg'
 
 
 export {
   logo,
+  blackhole,
   aboutbg,
   sunburn,
   light,
