@@ -40,13 +40,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-    }
 
         .logo {
           width: 250px;
@@ -65,45 +58,54 @@
           padding-right: 10px;
         }
 
-            li{
-              list-style: none;
-              padding: 0 20px;
-              position: relative;
-              cursor: pointer;
-              
+        #menu li{
+          list-style: none;
+          padding: 0 20px;
+          position: relative;
+          cursor: pointer;
+          
+        }
+
+        #menu li a{
+          text-decoration: none;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: black;
+          transition: 0.2s ease-in-out;
+        }
+
+        #menu li a:hover{
+          color: #5ace0f;
+        }
+
+        #menu li a:hover::after {
+          content: "";
+          width: 30%;
+          height: 2px;
+          background-color: #5ace0f;
+          position: absolute;
+          bottom: -4px;
+          left: 20px;
+        }
+
+
+
+        nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          
+        }
+
+            #mobile i{
+              color: black;
             }
-
-                a{
-                  text-decoration: none;
-                  font-size: 1.3rem;
-                  font-weight: 600;
-                  color: black;
-                  transition: 0.2s ease-in-out;
-                }
-
-                a:hover{
-                  color: #5ace0f;
-                }
-
-                a:hover::after {
-                  content: "";
-                  width: 30%;
-                  height: 2px;
-                  background-color: #5ace0f;
-                  position: absolute;
-                  bottom: -4px;
-                  left: 20px;
-                }
 
             #mobile {
               display: none;
             }
-
-                i{
-                  color: black;
-                }
-
-
 
         @media screen and (max-width:800px) {
           #menu {

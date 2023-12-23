@@ -3,11 +3,11 @@
   z-index: 0;
   width: 100%;
   height: 100vh;
+  background-color: rgb(192, 226, 255);
 }
     .title {
       width: 100%;
       height: 240px;
-      /* background-color: blanchedalmond; */
       position: relative;
       z-index: 1;
 
@@ -18,7 +18,6 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
       color: #5aef63;
-      text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
       font-size: 60px;
       position: absolute;
       width: 100%;
@@ -26,72 +25,54 @@
       text-align: center;
     }
 
-    .achvmnt {
-      display: flex;
-      align-items:  center;
-      justify-content: space-between;
-      padding-right: 10px;
-      width: 100%;
-      z-index: 0;
+    @keyframes slide {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+      }
     }
 
-        .arrowPosition{
-          margin: 10%;
-          position: relative;
-          z-index: 0;
-        }
-            .arrow-container {
-              width: 50px;
-              height: 100px;
-              position: relative;
-            }
-                .arrow {
-                  width: 0;
-                  height: 0;
-                  border-left: 20px solid transparent;
-                  border-right: 20px solid transparent;
-                  border-bottom: 30px solid #3fb8af; /* Change color if needed */
-                  position: absolute;
-                  top: 100%;
-                  left: 50%;
-                  transform: translateX(-50%) rotate(90deg);
-                  animation: arrowAnimation 1s infinite;
-                }
+    .cerificates {
+      overflow: hidden;
+      padding: 60px 0;
+      white-space: nowrap;
+      position: relative;
+    }
 
-                @keyframes arrowAnimation {
-                  0% {
-                    transform: translateX(-50%) rotate(0deg) translateY(0);
-                  }
-                  50% {
-                    transform: translateX(-50%) rotate(0deg) translateY(-30px);
-                  }
-                  100% {
-                    transform: translateX(-50%) rotate(0deg) translateY(0);
-                  }
-                }
-
-        .container {
-          width: 600px;
-          height: 600px;
-          left: 50%;
-          overflow-y: scroll;
-          border-radius: 10px;
-          margin-top: 100px;
-          z-index: 0;
-        }
-
-            .Ac {
-              width: 100%;
-              border-radius: 10px;
-              margin-bottom: 10px;
-              box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
-            }
-    .bg {
+    .cerificates:before,
+    .cerificates:after {
       position: absolute;
-      width: 100%;
+      top: 0;
+      width: 250px;
       height: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
+      content: "";
+      z-index: 2;
+    }
+
+    .cerificates:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(192, 226, 255));
+    }
+
+    .cerificates:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(192, 226, 255));
+    }
+
+    .cerificates:hover .cerificates-slide {
+      animation-play-state: paused;
+    }
+
+    .cerificates-slide {
+      display: inline-block;
+      animation: 30s slide infinite linear;
+    }
+
+    .cerificates-slide img {
+      border-radius: 10px;
+      box-shadow: -5px 5px 8px 5px #888888;
+      height: 600px;
+      margin: 0 40px;
     }

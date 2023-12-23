@@ -11,6 +11,7 @@ import React, { useRef } from 'react';
 const App = () => {
   const mainComponentRef = useRef(null);
   const achievementsRef = useRef(null);
+  // const achievementsRef = useRef(null);
 
   return (
     <div className="App">
@@ -19,7 +20,7 @@ const App = () => {
       <ImgLoop />
       <Main ref={mainComponentRef}/>
       <Achievements ref={achievementsRef} />
-      <Programs/>
+      {/* <Programs/> */}
       <Footer />
       
     </div>

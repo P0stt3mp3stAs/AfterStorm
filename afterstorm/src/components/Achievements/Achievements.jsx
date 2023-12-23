@@ -11,7 +11,7 @@ import { I } from '../../assets'
 import { J } from '../../assets'
 import './Achievements.css'
 import React, { forwardRef } from 'react';
-import StarrySky from '../StarrySky/StarrySky'
+// import StarrySky from '../StarrySky/StarrySky'
 import { ACHIEVEMENTS } from '../../assets'
 
 const Achievements = forwardRef((props, ref) => {
@@ -22,7 +22,34 @@ const Achievements = forwardRef((props, ref) => {
           <div className='h1'>ACHIEVEMENTS</div>
         </div>
 
-        <div className='achvmnt'>
+        <div className='cerificates'>
+          <div className='cerificates-slide'>
+            <img src={A} />
+            <img src={B} />
+            <img src={C} />
+            <img src={D} />
+            <img src={E} />
+            <img src={F} />
+            <img src={G} />
+            <img src={H} />
+            <img src={I} />
+            <img src={J} />
+          </div>
+          <div className='cerificates-slide'>
+            <img src={A} />
+            <img src={B} />
+            <img src={C} />
+            <img src={D} />
+            <img src={E} />
+            <img src={F} />
+            <img src={G} />
+            <img src={H} />
+            <img src={I} />
+            <img src={J} />
+          </div>
+        </div>
+
+        {/* <div className='achvmnt'>
           <div className='arrowPosition'>
             <div className="arrow-container">
               <div className="arrow"></div>
@@ -79,11 +106,11 @@ const Achievements = forwardRef((props, ref) => {
               <div className="arrow"></div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-      <div className="bg">
+      {/* <div className="bg">
         <StarrySky />
-      </div>
+      </div> */}
       
     </div>
   );
