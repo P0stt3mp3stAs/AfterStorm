@@ -3,7 +3,7 @@
   z-index: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgb(192, 226, 255);
+  background: linear-gradient(to left, rgb(29, 6, 58), rgb(9, 21, 58));
 }
     .title {
       width: 100%;
@@ -53,12 +53,12 @@
 
     .cerificates:before {
       left: 0;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(192, 226, 255));
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(9, 21, 58));
     }
 
     .cerificates:after {
       right: 0;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(192, 226, 255));
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(29, 6, 58));
     }
 
     .cerificates:hover .cerificates-slide {
@@ -67,7 +67,7 @@
 
     .cerificates-slide {
       display: inline-block;
-      animation: 30s slide infinite linear;
+      animation: 60s slide infinite linear;
     }
 
     .cerificates-slide img {

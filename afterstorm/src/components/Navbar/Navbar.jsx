@@ -21,19 +21,21 @@ class Navbar extends Component {
 
   handleAchievementsClick = () => {
     if (this.props.achievementsRef && this.props.achievementsRef.current) {
-      const achievementsPosition = this.props.achievementsRef.current.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: achievementsPosition, behavior: 'smooth' });
+      this.props.achievementsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+    this.setState({ clicked: false });
   };
-
+  
   handleSayHiClick = () => {
-    window.location.href = 'mailto:ghaliwali@gmail.com';
+    if (this.props.footerComponentRef && this.props.footerComponentRef.current) {
+      this.props.footerComponentRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  render() {
+render() {  
     return (
       <nav className='navContainer'>
         <div id='navbg'></div>

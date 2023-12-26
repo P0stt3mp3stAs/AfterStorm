@@ -8,12 +8,12 @@ import sunburn from "./footerbg.svg"
 import light from "./footerLogo.svg"
 import Lname from "./footerLogoName.svg"
 
-import li from "./li.svg"
-import ig from "./ig.svg"
-import git from "./git.svg"
-import mail from "./mail.svg"
-import x from "./x.svg"
-import co from "./co.svg"
+import li from "./li.png"
+import ig from "./ig.png"
+import git from "./git.png"
+import mail from "./mail.png"
+import x from "./x.png"
+import co from "./co.png"
 
       // Achievements
 import A from "./A.png"

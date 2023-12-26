@@ -1,12 +1,8 @@
 #blackbg {
-  background: black;
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: 500px;
   display: flex;
-  justify-content: center; /* Horizontally center content */
+  justify-content: center;
   align-items: center;
+  z-index: -10;
 }
     #blackholebg {
       position: absolute;
@@ -14,33 +10,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: -1;
       }
-
-    /* .wrapper {
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-        .item {
-          min-width: 110px;
-          height: 110px;
-          line-height: 110px;
-          align-items: center;
-          margin-left: 2%;
-        }
-
-            .logos {
-              margin-top: 25px;
-              width: 60px;
-            }
-
-            .figma {
-              margin-top: 30px;
-              width: 60px;
-            } */
 
             .wrapper {
               display: flex;
@@ -55,140 +26,62 @@
               justify-content: center;
               align-items: center;
               flex-direction: column;
-              
               position: absolute;
-              top: 50%;
-              left: 50%;
+              bottom: 0px;
               transform: translate(-50%, -50%);
             }
             
             .logos {
-              width: 0px;
+              width: 50px;
+              z-index: 10;
             }
 
-            /* React ✓ */
-            
-            .react {
-              animation: react 2s ease-in-out 0.5s infinite ;
-            }
+#ship {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
 
-            @keyframes react {
-              0% {
-                transform: translateX(-2000px);
-                width: 500px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
+.black {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
 
-            /* js ✓ */
-            
-            .js {
-              animation: js 3.5s ease-in-out 1s infinite ;
-            }
+#leftrocket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 17%;
+}
+#rightrocket {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 17%;
+}
 
-            @keyframes js {
-              0% {
-                transform: translate(2000%, -500%);
-                width: 500px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
+.buttonContainer {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2%;
+  padding-left: 16.3%;
+}
 
-            /* html5 ✓ */
-
-            .html5 {
-              animation: html5 3s ease-in-out 1.5s infinite;
-            }
-
-            @keyframes html5 {
-              0% {
-                transform: translate(-700%, 700%);
-                width: 500px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
-
-            /* css ✓ */
-
-            .css {
-              animation: css 2.5s ease-in-out 2s infinite;
-            }
-
-            @keyframes css {
-              0% {
-                transform: translate(700%, 700%);
-                width: 500px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
-
-            /* blender ✓ */
-
-            .blender {
-              animation: blender 4s ease-in-out 2.5s infinite; 
-            }
-            @keyframes blender {
-              0% {
-                transform: translate(-1500%, -300%);
-                width: 500px;
-              }
-              100% {
-                transform: translate(0, 0);
-              }
-            }
-
-            /* ai ✓ */
-
-            .ai {
-              animation: ai 3s ease-in-out 3s infinite; 
-            }
-
-            @keyframes ai {
-              0% {
-                transform: translate(100%, 300%);
-                width: 300px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
-
-            /* ps */
-
-            .ps {
-              animation: ps 2s ease-in-out 3.5s infinite; 
-            }
-
-            @keyframes ps {
-              0% {
-                transform: translate(-100%, -300%);
-                width: 200px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            }
-
-            /* figma */
-
-            .figma {
-              animation: figma 3s ease-in-out 4s infinite; 
-            }
-
-            @keyframes figma {
-              0% {
-                transform: translate(2000%, 500%);
-                width: 500px;
-              }
-              100% {
-                transform: translateX(0);
-              }
-            } 
+.button,
+.clicked {
+  width: 3.5vw;
+}
