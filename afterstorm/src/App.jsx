@@ -6,8 +6,7 @@ import ImgLoop from './components/ImgLoop/ImgLoop';
 import Achievements from './components/Achievements/Achievements';
 import Programs from './components/Programs/Programs';
 import Footer from './components/Footer/Footer';
-import StarryBackground from './components/StarryBackground/StarryBackground';
-import React, { useRef, useState, useEffect  } from 'react';
+import React, { useRef } from 'react';
 
 const App = () => {
   const mainComponentRef = useRef(null);
@@ -16,18 +15,18 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <StarryBackground starCount={1000} starSize={1} /> */}
-      {/* <StarrySky /> */}
-      {/* <Navbar 
+      <StarrySky />
+      <Navbar 
         mainComponentRef={mainComponentRef} 
         achievementsRef={achievementsRef} 
         footerComponentRef={footerRef}  
-      /> */}
-      {/* <ImgLoop /> */}
-      {/* <Main ref={mainComponentRef}/> */}
-      {/* <Achievements ref={achievementsRef} /> */}
+      />
+      <ImgLoop />
+      <Main ref={mainComponentRef}/>
+      <Achievements ref={achievementsRef} />
       <Programs />
-      {/* <Footer ref={footerRef} /> */}
+
+      <Footer ref={footerRef} />
     </div>
   );
 }

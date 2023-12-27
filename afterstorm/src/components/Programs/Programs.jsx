@@ -28,7 +28,8 @@ function Programs() {
 
   const handleClick = () => {
     animateButton();
-    animateItem();
+    animateOne();
+    animateTwo();
   };
   
   const animateButton = () => {
@@ -38,40 +39,54 @@ function Programs() {
     }, 150);
   };
   
-  const animateItem = () => {
-    const items = document.querySelectorAll('.item');
+  const animateOne = () => {
+    const oneItems = document.querySelectorAll('.item.one');
+    const randomIndex = Math.floor(Math.random() * oneItems.length);
+    const selectedItem = oneItems[randomIndex];
   
-    const randomIndex = Math.floor(Math.random() * items.length);
-    const selectedItem = items[randomIndex];
+    const animationDuration = 2000;
+    const targetWidth = 0;
+    const targetHeight = 0;
+    const newPosition = { bottom: '50%', left: '50%' };
   
-    const animationDuration = 1500;
-    const start = performance.now();
+    selectedItem.style.transition = `all ${animationDuration / 1000}s ease`;
+    selectedItem.style.bottom = newPosition.bottom;
+    selectedItem.style.left = newPosition.left;
+    selectedItem.style.width = `${targetWidth}%`;
+    selectedItem.style.height = `${targetHeight}%`;
   
-    const animate = (timestamp) => {
-      const elapsed = timestamp - start;
-      const progress = elapsed / animationDuration;
+    setTimeout(() => {
+      selectedItem.style.transition = 'none';
+      selectedItem.style.bottom = '';
+      selectedItem.style.left = '';
+      selectedItem.style.width = '';
+      selectedItem.style.height = '';
+    }, animationDuration);
+  };
+
+  const animateTwo = () => {
+    const twoItems = document.querySelectorAll('.item.two');
+    const randomIndex = Math.floor(Math.random() * twoItems.length);
+    const selectedItem = twoItems[randomIndex];
+
+    const animationDuration = 2000;
+    const targetWidth = 0;
+    const targetHeight = 0;
+    const newPosition = { bottom: '50%', right: '50%' };
+
+      selectedItem.style.transition = `all ${animationDuration / 1000}s ease`;
+      selectedItem.style.bottom = newPosition.bottom;
+      selectedItem.style.right = newPosition.right;
+      selectedItem.style.width = `${targetWidth}%`;
+      selectedItem.style.height = `${targetHeight}%`;
   
-      const initialBottom = window.innerHeight - selectedItem.getBoundingClientRect().bottom;
-      const initialLeft = selectedItem.getBoundingClientRect().left;
-  
-      const finalBottom = window.innerHeight / 2 - selectedItem.clientHeight / 2;
-      const finalLeft = window.innerWidth / 2 - selectedItem.clientWidth / 2;
-  
-      const currentBottom = initialBottom + (finalBottom - initialBottom) * progress;
-      const currentLeft = initialLeft + (finalLeft - initialLeft) * progress;
-  
-      selectedItem.style.bottom = `${currentBottom}px`;
-      selectedItem.style.left = `${currentLeft}px`;
-  
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      } else {
+      setTimeout(() => {
+        selectedItem.style.transition = 'none';
         selectedItem.style.bottom = '';
-        selectedItem.style.left = '';
-      }
-    };
-  
-    requestAnimationFrame(animate);
+        selectedItem.style.right = '';
+        selectedItem.style.width = '';
+        selectedItem.style.height = ''; 
+      }, animationDuration);
   };
 
   return (
@@ -94,28 +109,77 @@ function Programs() {
       
 
       <div className='wrapper'>
-        <div className='item'>
+        <div className='item one'>
           <img src={react} alt={react} className='react logos' />
         </div>
-        <div className='item'>
+        <div className='item one'>
           <img src={js} alt={js} className='js logos' />
         </div>
-        <div className='item'>
+        <div className='item one'>
           <img src={html5} alt={html5} className='html5 logos' />
         </div>
-        <div className='item'>
+        <div className='item one'>
           <img src={css} alt={css} className='css logos' />
         </div>
-        <div className='item'>
+        <div className='item one'>
+          <img src={react} alt={react} className='react logos' />
+        </div>
+        <div className='item one'>
+          <img src={js} alt={js} className='js logos' />
+        </div>
+        <div className='item one'>
+          <img src={html5} alt={html5} className='html5 logos' />
+        </div>
+        <div className='item one'>
+          <img src={css} alt={css} className='css logos' />
+        </div>
+        <div className='item one'>
+          <img src={react} alt={react} className='react logos' />
+        </div>
+        <div className='item one'>
+          <img src={js} alt={js} className='js logos' />
+        </div>
+        <div className='item one'>
+          <img src={html5} alt={html5} className='html5 logos' />
+        </div>
+        <div className='item one'>
+          <img src={css} alt={css} className='css logos' />
+        </div>
+
+        <div className='item two'>
           <img src={blender} alt={blender} className='blender logos' />
         </div>
-        <div className='item'>
+        <div className='item two'>
           <img src={ai} alt={ai} className='ai logos' />
         </div>
-        <div className='item'>
+        <div className='item two'>
           <img src={ps} alt={ps} className='ps logos' />
         </div>
-        <div className='item'>
+        <div className='item two'>
+          <img src={figma} alt={figma} className='figma logos' />
+        </div>
+        <div className='item two'>
+          <img src={blender} alt={blender} className='blender logos' />
+        </div>
+        <div className='item two'>
+          <img src={ai} alt={ai} className='ai logos' />
+        </div>
+        <div className='item two'>
+          <img src={ps} alt={ps} className='ps logos' />
+        </div>
+        <div className='item two'>
+          <img src={figma} alt={figma} className='figma logos' />
+        </div>
+        <div className='item two'>
+          <img src={blender} alt={blender} className='blender logos' />
+        </div>
+        <div className='item two'>
+          <img src={ai} alt={ai} className='ai logos' />
+        </div>
+        <div className='item two'>
+          <img src={ps} alt={ps} className='ps logos' />
+        </div>
+        <div className='item two'>
           <img src={figma} alt={figma} className='figma logos' />
         </div>
       </div>

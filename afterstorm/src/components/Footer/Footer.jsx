@@ -31,7 +31,7 @@ const Footer = forwardRef((props, ref) => {
   };
 
   return (
-    <div className='feet'>
+    <div ref={ref} className='feet'>
         <div className='footer'>
           
           <div className='mainfooter'>

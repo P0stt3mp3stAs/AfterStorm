@@ -22,7 +22,15 @@ const ImgLoop = () => {
   return (
     <div>
     <div className='img-loop-container'>
-      {/* <div className='title1'>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br>AFTER STORM <br></br></div> */}
+      <div className='title1'>
+        Welcome to my<br></br>portfolio,
+        <p id='firsttext'>
+        world of front-end that brings life to code and creativity meets innovation. <br></br>
+        </p>
+        <p id='firsttext1'>
+        From sleek designs to interactive experiences, explore the artistry of modern web development. Join me on this journey through digital innovation and creativity.
+        </p>
+      </div>
       <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
     </div>
     </div>
