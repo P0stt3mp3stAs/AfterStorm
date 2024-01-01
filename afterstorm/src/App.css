@@ -3,11 +3,11 @@ body {
 }
 
 .App {
-  position: relative; /* Ensure positioning context for z-index */
-  text-align: center;
-  /* background-image: linear-gradient(to right, #09153a, #1d063a); */
+  height: 100vh;
+  overflow-y: scroll;
 }
 
-.poop {
-  color: aliceblue;
+.component {
+  scroll-behavior: smooth;
+  /* Other styles */
 }

@@ -7,7 +7,7 @@ const Main = forwardRef((props, ref) => {
   const [showCursor, setShowCursor] = useState(true);
   
   const messages = [
-    '❯ This is a homosepian\n❯ <Elghali_Wali_Alami>\n❯ ./Africa/morocco\n❯ Front-en Web Dveloper\n❯ junior in:\n React_\n javascrip_\n html_\n css_\n❯ .'
+    '❯ This is a homosepian\n❯ <Elghali_Wali_Alami>\n❯ ./Africa/morocco\n❯ Front-end Web Dveloper\n❯ junior in:\n React_\n javascrip_\n html_\n css_\n❯ .'
   ];
 
   useEffect(() => {

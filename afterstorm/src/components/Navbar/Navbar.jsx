@@ -5,6 +5,7 @@ import "./Navbar.css";
 import { Component } from 'react';
 
 class Navbar extends Component {
+
   state = {clicked: false};
   handleClikc = () => {
     this.setState({clicked: !this.state.clicked})
@@ -22,6 +23,13 @@ class Navbar extends Component {
   handleAchievementsClick = () => {
     if (this.props.achievementsRef && this.props.achievementsRef.current) {
       this.props.achievementsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    this.setState({ clicked: false });
+  };
+
+  handlePlayClick = () => {
+    if (this.props.programsRef && this.props.programsRef.current) {
+      this.props.programsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
     this.setState({ clicked: false });
   };
@@ -49,7 +57,10 @@ render() {
               <a onClick={this.handleAboutClick}>About</a>
             </li>
             <li>
-              <a onClick={this.handleAchievementsClick}>achievements</a>
+              <a onClick={this.handleAchievementsClick}>Achievements</a>
+            </li>
+            <li>
+              <a onClick={this.handlePlayClick}>Play</a>
             </li>
             <li>
               <a onClick={this.handleSayHiClick}>Say Hi</a>

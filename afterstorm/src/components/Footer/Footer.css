@@ -53,8 +53,8 @@
         .Lname {
           position: absolute;
           z-index: 1;
-          top: 60%;
-          width: 2000px;
+          top: 40%;
+          width: 80%;
         }
 
     @keyframes slid {
