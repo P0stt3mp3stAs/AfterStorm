@@ -65,11 +65,11 @@ const App = () => {
   return (
     <div className="App">
       <StarrySky />
-      <Navbar 
-        mainComponentRef={mainComponentRef} 
-        achievementsRef={achievementsRef} 
-        footerComponentRef={footerRef}  
-        programsRef={programsRef} 
+      <Navbar
+        mainComponentRef={mainComponentRef}
+        achievementsRef={achievementsRef}
+        footerComponentRef={footerRef}
+        programsRef={programsRef}
       />
       <ImgLoop ref={imgLoopRef} />
       <Main ref={mainComponentRef}/>

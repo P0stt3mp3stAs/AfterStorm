@@ -27,9 +27,9 @@ const ImgLoop = () => {
         <p id='firsttext'>
         world of front-end that brings life to code and creativity meets innovation. <br></br>
         </p>
-        <p id='firsttext1'>
+        {/* <p id='firsttext1'>
         From sleek designs to interactive experiences, explore the artistry of modern web development. Join me on this journey through digital innovation and creativity.
-        </p>
+        </p> */}
       </div>
       <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
     </div>
